@@ -1,42 +1,88 @@
-# ☕ Café Aroma - Sistema de Gestão para Cafeterias
+# ☕ Café Aroma — Sistema de Gestão de Pedidos e Estoque
 
-## 📋 Descrição da Atividade
+Bem-vindo ao repositório do **Café Aroma**, um sistema completo de gestão para cafeterias, englobando vendas, cadastro de produtos, promoções, controle de estoque e relacionamento com clientes. Este projeto demonstra habilidades de modelagem relacional, SQL avançado e boas práticas de desenvolvimento de sistemas integrados.
 
-Este projeto tem como objetivo modelar e propor um sistema de gestão para uma rede de cafeterias focada em cafés especiais, com atenção especial à experiência do cliente, controle de pedidos e gestão operacional.
+## 📚 Descrição do Projeto
 
-## 🌍 Contexto
+O **Café Aroma** foi projetado para facilitar o controle operacional de uma cafeteria, incluindo:
 
-O **Café Aroma** é uma rede emergente de cafeterias que oferece cafés especiais de diversas origens. Com o crescimento da rede, surgiu a necessidade de um sistema eficiente para rastrear e gerenciar suas operações diárias, tais como:
+- Cadastro e gestão de filiais, funcionários e clientes
+- Criação dinâmica de produtos e suas composições
+- Controle de estoque de ingredientes
+- Aplicação automatizada de promoções e descontos
+- Registro de pedidos, itens e ingredientes adicionais
 
-- Pedidos personalizados
-- Preferências e histórico de clientes
-- Variedade de cafés e ingredientes adicionais
-- Funcionários e filiais
-- Promoções sazonais
-- Insights de vendas e comportamento do consumidor
+O modelo foi inteiramente desenhado a partir de um **diagrama entidade-relacionamento**:
 
-## 🧑‍💼 Cliente
+![Diagrama ER Café Aroma](./der_cafe_aroma.png)
 
-> “Estamos entusiasmados com a expansão do nosso negócio, o *Café Aroma*, e precisamos da sua ajuda para gerir nossas operações. Desde a preferência do cliente por um expresso ou um latte até os ingredientes adicionais como leite de amêndoa ou xarope de baunilha, precisamos de uma visão clara. Cada pedido pode ter várias escolhas e adições, e monitorar isso é essencial. Além disso, temos uma equipe dedicada em várias filiais que precisam de gerenciamento adequado. E ah, as promoções sazonais são um grande atrativo para nós. Você pode nos ajudar a construir um sistema que cubra tudo isso?”
+## 🏗️ Modelagem do Banco de Dados
 
-## 🧩 Funcionalidades Esperadas
+O sistema contempla as seguintes entidades principais:
 
-- Cadastro de clientes com histórico de pedidos e preferências.
-- Registro de tipos de café e ingredientes adicionais.
-- Sistema de criação e gerenciamento de pedidos personalizados.
-- Gestão de funcionários por filial.
-- Registro e controle de promoções sazonais.
-- Relatórios de vendas e análise de comportamento do cliente.
+- Filial
+- Funcionário
+- Cliente
+- Endereço
+- Produto, Categoria e Composição
+- Ingrediente
+- Promoção
+- Pedido, Item de Pedido e Adicionais
 
-## 🧱 Tecnologias Utilizadas
+Toda estrutura foi construída em SQL, 100% normalizada, cobrindo chaves primárias, estrangeiras e tabelas associativas.
 
-- Modelagem de dados (MER e DER)
-- Banco de dados relacional (MySQL / PostgreSQL)
-- Scripts SQL de criação e inserção
-- Ferramentas de documentação: Markdown, Draw.io, DBDesigner
+## 🚀 Funcionalidades-Chave
 
-## 🗃️ Estrutura do Repositório
+- **Controle de estoque automatizado** para ingredientes marcados como controlados
+- **Cadastro flexível** de produtos e suas composições
+- **Promoções inteligentes** aplicadas diretamente aos pedidos
+- **Gestão completa de pedidos**, incluindo históricos, avaliações e adicionais
+
+## 🗂️ Estrutura do Repositório
+
+| Pasta/Arquivo            | Descrição                                                |
+|--------------------------|---------------------------------------------------------|
+| `der_cafe_aroma.png`     | Diagrama E-R do projeto                                 |
+| `ddl/`                   | Scripts SQL de criação das tabelas                      |
+| `dml/`                   | Scripts de inserção e exemplos de uso                   |
+| `README.md`              | Guia e apresentação geral do projeto                    |
+
+## 💡 Como utilizar
+
+1. Clone este repositório.
+2. Importe os scripts SQL em seu SGBD de escolha.
+3. Popule o banco com os exemplos disponíveis.
+4. Realize consultas e operações conforme suas necessidades.
+
+## 📝 Exemplos de Consultas
+
+- Buscar todos os pedidos de um cliente
+- Listar produtos de um pedido e seus ingredientes adicionais
+- Verificar estoque de ingredientes controlados
+
+## 👨‍💻 Tecnologias Utilizadas
+
+- SQL ANSI
+- Ferramentas de modelagem visual (como dbdiagram.io)
+- SGBDs compatíveis: MySQL, PostgreSQL, SQL Server
+
+## 📈 Diferenciais
+
+- Modelagem flexível e expansível, pronta para integrações futuras (ex: aplicativos mobile, delivery)
+- Scripts documentados e otimizados para performance
+- Código pronto para uso didático e profissional
+
+## 📬 Contato
+
+Dúvidas ou sugestões? Fique à vontade para abrir uma *issue* ou entrar em contato por [seu e-mail ou LinkedIn].
+
+---
+
+Personalize conforme sua identidade visual e área de atuação!
+
 
 
 
 ![](https://github.com/leoarcabold/projeto_cafeteria/blob/main/img/der_cafe_aroma.png)
+
+![](https://github.com/leoarcabold/projeto_cafeteria/blob/main/img/modelo%20relacional.png)
